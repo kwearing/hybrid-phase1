@@ -1,0 +1,976 @@
+/*MOBILE SPECS*/
+@import url("//hello.myfonts.net/count/2f9e5e");@font-face {
+    font-family: "Pluto Sans Condensed";
+    src: url("/assets/font/PlutoSansCondRegular.eot");
+    src: url("/assets/font/PlutoSansCondRegular.woff") format("woff"),url("/assets/font/PlutoSansCondRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: "Pluto Sans";
+    src: url("/assets/font/PlutoSansBold.eot");
+    src: url("/assets/font/PlutoSansBold.woff") format("woff"),url("/assets/font/PlutoSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Pluto Sans";
+    src: url("/assets/font/PlutoSansMedium.eot");
+    src: url("/assets/font/PlutoSansMedium.woff") format("woff"),url("/assets/font/PlutoSansMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500
+}
+
+@font-face {
+    font-family: "Pluto Sans";
+    src: url("/assets/font/PlutoSansLight.otf");
+    font-style: normal;
+    font-weight: 100
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(25, 25, 25);
+    overflow: auto;
+}
+
+h1, h2, h3, h4, p, ul, .footer-nav-contents, .accordion-body {
+    margin: 0;
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    line-height: 1.75rem;
+    color: #303e46;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.75rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+h3 {
+    font-size: large;
+}
+
+p, .footer-nav-contents>a {
+    font-size: 15px;
+    line-height: 1.35rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #303E46;
+    font-weight: 500;
+}
+
+.footer-nav-contents>p a, .entity-ga a {
+    border-bottom: #80C342 1px solid;
+}
+
+li {
+    list-style: disc;
+    color: #80C342;
+}
+
+li span {
+    color: #303E46;
+    font-size: 15px;
+    line-height: 1rem;
+    font-weight: 400;
+    padding-left: -10px;
+}
+
+sup a {
+    color: #80C342;
+}
+
+.fa-regular {
+    color: #f15a24;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.tal-header {
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem 0rem 0.15rem 1rem;
+}
+
+.tal-header .header-logo-product img {
+    height: 35px;
+    padding-left: 0;
+}
+
+.tal-header .tal-header-cta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.tal-header-cta i {
+    padding-right: 5px;
+    color: #D4D4D4;
+}
+
+.tal-header-cta p {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    line-height: 1.75rem;
+    color: white;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+    border-left: #D4D4D4 1px solid;
+}
+
+.tal-header-cta a {
+    border-bottom: 1px solid #80C342;
+    font-size: 14px;
+    margin: 0;
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 1.75rem;
+    color: white;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+}
+
+.header-logo-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo-product img {
+    height: 40px;
+    width: auto;
+    padding-bottom: 0.75rem;
+}
+
+.slash {
+    display: none;
+}
+
+.header-product>h1 {
+    font-size: x-large;
+    color: white;
+    line-height: 0.75rem;
+    display: inline-block;
+    padding: 0.75rem 0.15rem 1.15rem 0.15rem;
+}
+
+.header-awards {
+    display: flex;
+    align-items: flex-end;
+    padding: 0.25rem 0 1rem 0;
+}
+
+.header-awards img {
+    width: auto;
+    height: 80px;
+    padding: 0 0.5rem 0 0.25rem;
+}
+
+#canstar {
+    width: auto;
+    height: 90px;
+}
+
+.header-buttons {
+    display: none;
+}
+
+.banner {
+    height: 600px;
+    background-image: url(https://i.imgur.com/1DKgBLs.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position-x: 35%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0rem 0 0;
+}
+
+.banner-intro {
+    background-color: #f4f4f4ea;
+    width: auto;
+    height: 600px;
+    margin: 0;
+    padding: 2.5rem 1.5rem;
+    border-radius: 0 0rem 0 0;
+}
+
+.banner-intro ul {
+    padding-left: 2rem;
+}
+
+.banner-intro-cta, .quote-form-cta {
+    background-color: #7CBC34;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    padding: 0.75rem;
+    font-weight: 700;
+}
+
+.rewards {
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 0rem;
+}
+
+.rewards-icon {
+    display: block;
+    width: 15%;
+}
+
+.rewards img {
+    height: 60px;
+    width: auto;
+    padding: 0.5rem 0 0 2rem;
+}
+
+.rewards-copy {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0 1rem 0 2rem;
+}
+
+.rewards-copy>h2 {
+    color: #80C342;
+    font-size: 24px;
+    line-height: 1.75rem;
+    padding-right: 2rem;
+}
+
+.rewards-copy>p {
+    color: white;
+    line-height: 1.25rem;
+    font-size: 15px;
+}
+
+.rewards-copy a {
+    color: #80C342;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/*QUOTE FORM IMG*/
+
+.quote-form-img {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+    z-index: 100;
+}
+
+.quote-form-img img {
+    width: 100%;
+
+}
+
+/*QUOTE FORM MOBILE AND DESKTOP*/
+
+.quote-form {
+    background-color: white;
+    height: fit-content;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    margin-top: auto;
+    padding: 2rem 1rem;
+    z-index: 100;
+}
+
+.quote-form #quote-form-desktop {
+    padding-bottom: 20rem;
+}
+
+#quote-form-mobile .quote-form-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#digicert-logo {
+    height: 40px;
+    width: auto;
+    padding-left: 1rem;
+}
+
+.quote-help {
+    width: 30%;
+}
+
+#quote-form-input {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+#quote-form-input>p, #quote-form-get-in-touch>p {
+    color: #303E46;
+    font-size: medium;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+
+input {
+    display:inline-block;
+    margin: 0.25rem 0.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.11);
+    border-radius: 0.25rem;
+    border: solid #989fa3 0.1rem;
+    line-height: 1rem;
+}
+
+#form {
+    margin-left: 6px;
+}
+
+input:focus {
+    background-color: #e6f3d9;
+    border: none;
+    border-color: red;
+    outline: none;
+}
+
+input[placeholder] {
+    color: white;
+    font-size: small;
+  }
+
+.quote-form>h2 {
+    font-size: large;
+    font-weight: 400;
+}
+
+.quote-form>h3 {
+    font-size: small;
+    text-transform: uppercase;
+    color: #80c342;
+}
+
+#quote-form-help {
+    font-size: medium;
+    color: #303E46;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    font-weight: 600;
+}
+
+#quote-form-mobile li {
+    margin-left: 1rem;
+    list-style: square;
+    font-size: 15px;
+}
+
+.quote-form .quote-form-cta {
+    color: #303E46!important;
+    font-weight: 600!important;
+}
+
+#quote-form-mobile a {
+    color: #80C342;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#quote-form-desktop {
+    display: none;
+}
+
+.about-tal {
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.about-tal-faqs h2 {
+    color: #303E46!important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-tal-faqs {
+    margin: 0rem;
+    padding: 1.5rem 0;
+    background-color: #f4f5f6;
+}
+
+.about-tal-faqs .accordion {
+    width: 100%;
+    border: 5px solid #f4f5f6;
+}
+
+.about-tal-faqs .accordion-item {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.about-tal-faqs .accordion-header {
+    padding: 0;
+}
+
+.about-tal-faqs .accordion-header button {
+    font-weight: 700;
+    padding-left: 1rem;
+    line-height: 1.35;
+    font-size: 15px;
+    margin: 0.5rem 0;
+}
+
+.about-tal-faqs .accordion-button:not(collapsed) {
+    background-color: white;
+    color: #303E46;
+    border-color: none;
+}
+
+.about-tal-faqs .accordion-button::after {
+    background-image: url(https://i.imgur.com/3bjxQYz.jpeg);
+}
+
+.about-tal-faqs .accordion-body p {
+    padding-left: 0;
+}
+
+.about-tal-faqs .accordion-body a {
+    font-weight: 400;
+    color: #303E46;
+    border-bottom: 1px solid #80C342;
+}
+
+.about-tal-faqs h2 {
+    color: white;
+}
+
+.about-tal-why {
+    margin: 0rem;
+    padding: 1.5rem 0;
+}
+
+.about-tal-why>h2 {
+    color: #303e46;
+}
+
+.about-tal-why-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: start;
+    width: auto;
+    padding: 2rem 1rem;
+    margin: 0;
+}
+
+.about-tal-why-info-copy {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0.5rem 0;
+}
+
+.about-tal-why img {
+    width: 40px;
+    height: auto;
+}
+
+.footnotes h3, .footnotes p {
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    line-height: 1.75rem;
+    color: #303e46;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+}
+
+.footnotes h3 {
+    padding-top: 2.5rem;
+    font-weight: 700;
+}
+
+.footnotes p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+footer {
+    background-color: rgb(25, 25, 25);
+    display: block;
+    padding: 2rem 0rem 0rem 0;
+    margin: 0;
+    width: auto;
+}
+
+#footer-logo {
+    padding-bottom: 1rem;
+}
+
+.footer-nav-contents {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    }
+
+#footer-nav-contents-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+#footer-nav-contents-col-1 img {
+    height: 30px;
+    width: auto;
+    padding-bottom: 0;
+    }
+
+.footer-nav-contents #digicert-logo {
+    padding-top: 20px;
+    padding-left: 0;
+    height: 70px;
+    width: auto;
+    }
+    
+#footer-nav-contents-col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: block;
+}
+
+.footer-nav-contents>h3 {
+    padding: 1rem 0 0.5rem 0;
+    font-size: medium;
+}
+
+.footer-links>a {
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.footer-nav-contents>p {
+    display: inline-block;
+    font-size: smaller;
+    color: white;
+    line-height: 1.15rem;
+    padding: 0;
+}
+
+.footer-links>p, .entity-ga>p, .entity-ga a {
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+    padding-left: 0; 
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+/*DESKTOP SPECS*/
+@media (min-width: 992px) {   
+    .container {
+        max-width: 100%;
+        height: auto;        
+    }
+
+    .tal-header {
+        background-color: rgb(25, 25, 25);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0.5rem 15rem 0.15rem 15rem;
+    }
+
+    .tal-header .header-logo-product img {
+        height: 35px;
+        padding-left: 0;
+    }
+
+    .tal-header .tal-header-cta {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+
+    .tal-header-cta i {
+        padding-right: 5px;
+        color: #D4D4D4;
+    }
+
+    .tal-header-cta p {
+        font-size: 14px;
+        margin: 0;
+        font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding: 0.5rem 1.5rem 0.5rem 1rem;
+        line-height: 1.75rem;
+        color: white;
+        letter-spacing: -0.25px;
+        font-weight: 500;
+        border-left: #D4D4D4 1px solid;
+    }
+
+    .tal-header-cta a {
+        border-bottom: 1px solid #80C342;
+        font-size: 14px;
+        margin: 0;
+        font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+        text-align: left;
+        line-height: 1.75rem;
+        color: white;
+        letter-spacing: -0.25px;
+        font-weight: 500;
+    }
+
+    .header {
+        background-color: rgb(25, 25, 25);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 15rem 0.5rem 15rem;
+    }
+
+    .tal-header .header-logo-product {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        padding-bottom: 10px;
+    }
+
+    .header-logo-product img {
+        height: 50px;
+    }
+
+    .slash {
+        display: inline;
+        justify-content: center;
+        color: #7CBC34;
+        font-weight: 200;
+        font-size: 2.25rem;
+        padding: 0 0 0.75rem 0;
+    }
+
+    .header-product>h1 {
+        padding: 0.3rem 0.15rem;
+        font-size: larger;
+    }
+
+    .header-product {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    .header-awards {
+        display: flex;
+        align-items: flex-end;
+        justify-content: baseline;
+        padding-bottom: 5px;
+    }
+
+    .header-awards img {
+        width: auto;
+        height: 70px;
+        padding: 0 0.25rem;
+    }
+    
+    #canstar {
+        width: auto;
+        height: 85px;
+    }
+
+    .header-buttons {
+        display: none;
+        flex-direction: row;
+    }
+
+    .header-phone {
+        background-color: #EFEFD2;
+        border-radius: 0.5rem;
+        margin: 0 1rem 0 0;
+    }
+
+    .banner {
+        height: 700px;
+        background-image: url(https://i.imgur.com/1DKgBLs.jpeg);
+        background-position-y: 75%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        background-attachment: scroll;
+    }
+
+    .banner-intro {
+        background-color: #f4f4f4e7;
+        width: 400px;
+        height: 600px;
+        margin: 0 15rem;
+        padding: 2rem 1rem;
+        border-radius: 0;
+    }
+
+    .banner-intro ul {
+        padding-left: 2rem;
+    }
+
+    .banner-intro-cta {
+        display: none;
+    }
+
+    .rewards {
+        background-color: rgb(25, 25, 25);
+        padding: 2rem 15rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .rewards img {
+        height: 60px;
+        width: auto;
+        padding: 10px 0 0 0;
+    }
+
+    .rewards-icon {
+        width: 4%;
+    }
+
+    .rewards-copy {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0;
+    }
+
+    .rewards-copy>p {
+        line-height: 1.5rem;
+    }
+
+    /*QUOTE FORM IMG*/
+
+    .quote-form-img {
+        position: absolute;
+        top: 10rem;
+        right: 15rem;
+        z-index: 100;
+    }
+
+    .quote-form-img img {
+        width: 100%;
+        border: white 0.5rem solid;
+        border-radius: 0.5rem;
+        box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.664);
+    }
+
+/*ABOUT TAL*/
+
+    .about-tal {
+        background-color: white;
+        padding: 1rem 15rem 0 15rem;
+        left: 0rem;
+        width: 100%;
+        display: block;
+        margin: 0;   
+        z-index: 1;
+    }
+
+    .about-tal-faqs {
+        padding: 2rem 0;
+        background-color: white;
+    }
+
+    .about-tal-faqs .accordion {
+        border: 1px solid #D4D4D4;
+        width: 50%;
+    }
+
+    .about-tal-faqs .accordion-item {
+        padding: 0;
+        margin-bottom: 0rem;
+    }
+
+    .about-tal-faqs .accordion-header {
+        padding: 0;
+    }    
+
+    .about-tal-faqs .accordion-button:not(collapsed) {
+        background-color: white;
+        color: #303E46;
+    }
+
+    .about-tal-faqs .accordion-button::after {
+        background-image: url(https://i.imgur.com/3bjxQYz.jpeg);
+    }
+
+    .about-tal-faqs .accordion-header button {
+        font-weight: 700;
+        padding-left: 1rem;
+        margin: 0.25rem 0;
+    }
+
+    .about-tal-faqs .accordion-body p {
+        padding-left: 0;
+    }
+
+    .about-tal-faqs .accordion-body a {
+        font-weight: 400;
+        font-size: 15px;
+        color: #303E46;
+        border-bottom: 1px solid #80C342;
+    }
+
+    .about-tal-faqs h2 {
+        color: #303e46;
+    }
+
+    .about-tal-faqs h2, .about-tal-why h2 {
+        padding-left: 0;
+    }
+
+    .about-tal-why-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        justify-items: start;
+        align-items: start;
+        width: 50%;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .about-tal-why-info-copy {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+    }
+
+    .about-tal-why img {
+        width: 45px;
+        height: auto;
+    }
+
+.footnotes {
+    display: block;
+}
+
+.footnotes h3 {
+    padding-top: 2.5rem;
+    padding-left: 0;
+}
+
+.footnotes p {
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 0;
+}
+
+/*FOOTER*/
+    footer {
+        background-color: rgb(25, 25, 25);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 2rem 0rem;
+        max-width: 100%;
+        margin: 1.5rem 10rem;
+    }
+    
+    .footer-nav-contents {
+        margin: 0px 0px 15px 0px;
+        padding-left: 0;
+        width: auto;
+        flex-direction: column;
+        }
+
+    .footer-nav-contents>p {
+        line-height: 1.15rem;
+    }
+    
+    #footer-nav-contents-col-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: flex-start;
+        width: 30%;
+        padding-left: 5rem;
+        padding-right: 2.5rem;
+    }
+    
+    #footer-nav-contents-col-1 img {
+        height: 25px;
+        width: auto;
+        padding-bottom: 0;
+    }
+
+    #footer-nav-contents-col-1 #footer-logo {
+        padding-left: 10px;
+    }
+    
+    #footer-nav-contents-col-1 #digicert-logo {
+        height: 70px;
+        padding-top: 20px;
+    }
+
+    .footer-links>p, .entity-ga>p, .entity-ga a {
+        padding-left: 0; 
+        color: white;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+}
