@@ -52,13 +52,13 @@ h1, h2, h3, h4, p, ul, .footer-nav-contents, .accordion-body {
 }
 
 h1 {
-    font-size: 1.75rem;
-    line-height: 1.1;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 h2 {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 h3 {
@@ -207,7 +207,7 @@ sup a {
 }
 
 .banner {
-    height: 600px;
+    height: 700px;
     background-image: url(https://i.imgur.com/1DKgBLs.jpeg);
     background-position: center;
     background-size: cover;
@@ -220,10 +220,14 @@ sup a {
 .banner-intro {
     background-color: #f4f4f4ea;
     width: auto;
-    height: 600px;
+    height: 700px;
     margin: 0;
     padding: 2.5rem 1.5rem;
     border-radius: 0 0rem 0 0;
+}
+
+.banner-intro h2 {
+    padding-top: 1.5rem;
 }
 
 .banner-intro ul {
