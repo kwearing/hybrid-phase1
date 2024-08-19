@@ -117,6 +117,9 @@ sup a {
     justify-content: space-between;
     align-items: baseline;
     padding: 0.5rem 0rem 0.15rem 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 .tal-header .header-logo-product img {
@@ -158,6 +161,28 @@ sup a {
     color: white;
     letter-spacing: -0.25px;
     font-weight: 500;
+}
+
+.tal-header-quote-cta {
+    background-color: rgb(25, 25, 25);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid #989fa3;
+    position: fixed;
+    top: 3.4rem;
+    width: 100%;
+    z-index: 100;
+}
+
+.tal-header-quote-cta a {
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: #80C342;
+    padding: 0.5rem 3.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: black;
 }
 
 .header-logo-product {
@@ -215,6 +240,8 @@ sup a {
     display: flex;
     flex-direction: column;
     border-radius: 0 0rem 0 0;
+    position: absolute;
+    top: 7.5rem;
 }
 
 .banner-intro {
@@ -226,6 +253,16 @@ sup a {
     border-radius: 0 0rem 0 0;
 }
 
+#banner-other-insurance {
+    font-weight: 600;
+    color: #303E46;
+    border-bottom: 1px solid #80C342;
+}
+
+.banner-intro h1 {
+    text-align: center;
+}
+
 .banner-intro h2 {
     padding-top: 1.5rem;
 }
@@ -234,11 +271,19 @@ sup a {
     padding-left: 2rem;
 }
 
-.banner-intro-cta, .quote-form-cta {
+.quote-form-cta {
     background-color: #7CBC34;
     border-radius: 0.25rem;
     text-transform: uppercase;
     padding: 0.75rem;
+    font-weight: 700;
+}
+
+.banner-intro-cta {
+    border: 1px solid #7CBC34;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
     font-weight: 700;
 }
 
@@ -249,6 +294,7 @@ sup a {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 1rem 0rem;
+    z-index: 101;
 }
 
 .rewards-icon {
@@ -444,6 +490,12 @@ input[placeholder] {
 .about-tal-faqs .accordion {
     width: 100%;
     border: 5px solid #f4f5f6;
+    z-index: 102;
+}
+
+.about-tal-faqs #faqs-cta {
+    padding: 0.5rem;
+    font-weight: 700;
 }
 
 .about-tal-faqs .accordion-item {
@@ -471,6 +523,10 @@ input[placeholder] {
 
 .about-tal-faqs .accordion-button::after {
     background-image: url(https://i.imgur.com/3bjxQYz.jpeg);
+}
+
+.about-tal-faqs .accordion-body {
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 .about-tal-faqs .accordion-body p {
@@ -633,6 +689,7 @@ footer {
         justify-content: space-between;
         align-items: baseline;
         padding: 0.5rem 15rem 0.15rem 15rem;
+        z-index: 100;
     }
 
     .tal-header .header-logo-product img {
@@ -674,6 +731,10 @@ footer {
         color: white;
         letter-spacing: -0.25px;
         font-weight: 500;
+    }
+
+    .tal-header-quote-cta {
+        display: none;
     }
 
     .header {
@@ -747,7 +808,7 @@ footer {
     }
 
     .banner {
-        height: 700px;
+        height: 600px;
         background-image: url(https://i.imgur.com/1DKgBLs.jpeg);
         background-position-y: 75%;
         background-size: cover;
@@ -755,6 +816,11 @@ footer {
         flex-direction: column;
         border-radius: 0;
         background-attachment: scroll;
+        top: 2.5rem;
+    }
+
+    #banner-other-insurance {
+        display: none;
     }
 
     .banner-intro {
@@ -764,6 +830,11 @@ footer {
         margin: 0 15rem;
         padding: 2rem 1rem;
         border-radius: 0;
+    }
+
+    .banner-intro h1 {
+        text-align: left;
+        padding-top: 2rem;
     }
 
     .banner-intro ul {
@@ -780,6 +851,7 @@ footer {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+        z-index: 50;
     }
 
     .rewards img {
@@ -807,9 +879,9 @@ footer {
 
     .quote-form-img {
         position: absolute;
-        top: 10rem;
+        top: 3.5rem;
         right: 15rem;
-        z-index: 100;
+        z-index: 75;
     }
 
     .quote-form-img img {
@@ -819,7 +891,7 @@ footer {
         box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.664);
     }
 
-/*ABOUT TAL*/
+    /*ABOUT TAL*/
 
     .about-tal {
         background-color: white;
@@ -834,6 +906,10 @@ footer {
     .about-tal-faqs {
         padding: 2rem 0;
         background-color: white;
+    }
+
+    .about-tal-faqs #faqs-cta {
+        display: none;
     }
 
     .about-tal-faqs .accordion {
@@ -863,6 +939,10 @@ footer {
         font-weight: 700;
         padding-left: 1rem;
         margin: 0.25rem 0;
+    }
+
+    .about-tal-faqs .accordion-body {
+        padding: 0rem 1rem;
     }
 
     .about-tal-faqs .accordion-body p {
